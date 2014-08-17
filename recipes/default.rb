@@ -79,7 +79,7 @@ case node[:platform]
 	end
 	
 	  include_recipe "php"
-  end
+
    when "ubuntu"
     include_recipe "apt"
 
@@ -99,3 +99,4 @@ case node[:platform]
       command "service apache2 restart"
       action :run
     end
+  end  
